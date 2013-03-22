@@ -51,6 +51,7 @@ the response is:
 }
 ```
 This basically means that a projects has the fields of name, client_id, color and active and with types text, integer, string and boolean (text and string are basically the same, difference is between length) 
+
 Also, the links part - href is the URL you can use for an action, rel shows the action, method shows the HTTP method, eg: to create a project use the URL https://teamweek.com/api/v2/:account_id/projects and POST the fields and you're done.
 
 Required fields will be added to the 'template' in near future.
