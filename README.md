@@ -6,6 +6,57 @@ The API accepts only JSON requests. Please make sure you're setting Content-type
 
 The result of each action is communicated via standard HTTP response codes.
 
+##Basics##
+The API is accessible at https://teamweek.com/api/v2/
+
+Main objects in the API have a 'template', accessible under (with GET) https://teamweek.com/api/v2/:account_id/:object/new.json
+eg: for projects use https://teamweek.com/api/v2/:account_id/projects/new.json
+the response is:
+```json
+{
+	"project":
+		{
+			"name":"text",
+			"client_id":"integer",
+			"color":"string",
+			"active":"boolean"
+		},
+	"links":[
+		{
+			"href":"https://teamweek.com/api/v2/:account_id/projects",
+			"rel":"create",
+			"method":"POST"
+		},
+		{
+			"href":"https://teamweek.com/api/v2/:account_id/projects/:id",
+			"rel":"update",
+			"method":"PUT"
+		}, 
+		{
+			"href":"https://teamweek.com/api/v2/:account_id/projects/:id",
+			"rel":"read",
+			"method":"GET"
+		},
+		{
+			"href":"https://teamweek.com/api/v2/:account_id/projects/:id",
+			"rel":"delete",
+			"method":"DELETE"
+		},
+		{
+			"href":"https://teamweek.com/api/v2/:account_id/projects",
+			"rel":"list",
+			"method":"GET"
+		}
+	]
+}
+```
+This basically means that a projects has the fields of name, client_id, color and active and with types text, integer, string and boolean (text and string are basically the same, difference is between length) 
+Also, the links part - href is the URL you can use for an action, rel shows the action, method shows the HTTP method, eg: to create a project use the URL https://teamweek.com/api/v2/:account_id/projects and POST the fields and you're done.
+
+Required fields will be added to the 'template' in near future.
+
+For update you do not need to send all the fields, just the changed ones.
+
 ##API token##
 
 Each user in TeamWeek.com has an API token. They can find it under "My Profile" in their TeamWeek account.
