@@ -67,6 +67,11 @@ To use the API, you need to authenticate yourself. This can be done via token.
 
 If authentication fails, HTTP status code 403 is returned. You can read more about authentication and see sample requests [here](chapters/authentication.md).
 
+##Main objects and their API endpoints##
+* [User information](chapters/me.md)
+ - GET /me
+
+
 ##Help us towards a better API##
 
 The TeamWeek API has moved to Github so you could actively participate in helping us making the API better. If you have any requests or you found a bug, you can use Github issues to let us know. You can also fork the docs and send a pull request with improvements
