@@ -34,5 +34,5 @@ Failure
 			"name":["has already been taken"]
 		},
 	"account_version":1234567
-	}
+}
 ```
