@@ -49,7 +49,7 @@ To get both active and archived projects, use filter=all
 
 ##Get project##
 
-`GET https://teamweek.com/api/v2/:account_id/:project_id.json`
+`GET https://teamweek.com/api/v2/:account_id/projects/:project_id.json`
 
 ```json
 {
@@ -110,7 +110,7 @@ Use the fields from template as properties. A successful create returns the newl
 
 ##Update project##
 
-`PUT https://teamweek.com/api/v2/:account_id/:project_id.json`
+`PUT https://teamweek.com/api/v2/:account_id/projects/:project_id.json`
 
 Use the fields from template as properties. A successful update returns the newly updated object:
 
@@ -134,4 +134,4 @@ Use the fields from template as properties. A successful update returns the newl
 
 ##Delete project##
 
-`DELETE https://teamweek.com/api/v2/:account_id/:project_id.json`
+`DELETE https://teamweek.com/api/v2/:account_id/projects/:project_id.json`

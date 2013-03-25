@@ -41,7 +41,7 @@ To get both active and archived clients, use filter=all
 
 ##Get client##
 
-`GET https://teamweek.com/api/v2/:account_id/:client_id.json`
+`GET https://teamweek.com/api/v2/:account_id/clients/:client_id.json`
 
 ```json
 {
@@ -90,7 +90,7 @@ Use the fields from template as properties. A successful create returns the newl
 
 ##Update client##
 
-`PUT https://teamweek.com/api/v2/:account_id/:client_id.json`
+`PUT https://teamweek.com/api/v2/:account_id/clients/:client_id.json`
 
 Use the fields from template as properties. A successful update returns the newly updated object:
 
@@ -109,4 +109,4 @@ Use the fields from template as properties. A successful update returns the newl
 
 ##Delete client##
 
-`DELETE https://teamweek.com/api/v2/:account_id/:client_id.json`
+`DELETE https://teamweek.com/api/v2/:account_id/clients/:client_id.json`
