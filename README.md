@@ -77,7 +77,12 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - POST /projects
  - PUT /projects/:project_id
  - DELETE /projects/:project_id
-
+* [Clients](chapters/clients.md)
+ - GET /clients
+ - GET /clients/:client_id
+ - POST /clients
+ - PUT /clients/:client_id
+ - DELETE /clients/:client_id
 
 ##Help us towards a better API##
 

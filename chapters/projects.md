@@ -101,9 +101,7 @@ Use the fields from template as properties. A successful create returns the newl
   "name":"Project name",
   "undone_tasks":7,
   "undone_estimate":0,
-  "integration_accounts":[
-    {"integration_name":"toggl"}
-  ],
+  "integration_accounts":[],
   "background_class":"yellow",
   "client_name":"",
   "account_version":"8881"
@@ -114,7 +112,7 @@ Use the fields from template as properties. A successful create returns the newl
 
 `PUT https://teamweek.com/api/v2/:account_id/:project_id.json`
 
-Use the fields from template as properties. A successful update returns the newly created object:
+Use the fields from template as properties. A successful update returns the newly updated object:
 
 ```json
 {
