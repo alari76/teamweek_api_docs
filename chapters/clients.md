@@ -62,7 +62,7 @@ To get both active and archived clients, use filter=all
 
 ```json
 {
-  "project":
+  "client":
     {
       "name":"text",
       "active":"boolean"
