@@ -71,6 +71,12 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 ##Main objects and their API endpoints##
 * [User information](chapters/me.md)
  - GET /me
+* [Projects](chapters/projects.md)
+ - GET /projects
+ - GET /projects/:project_id
+ - POST /projects
+ - PUT /projects/:project_id
+ - DELETE /projects/:project_id
 
 
 ##Help us towards a better API##
