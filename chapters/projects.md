@@ -36,6 +36,7 @@ Returns all active projects, example:
     "client_name":"",
     "account_version":"8881"
   }
+]
 ```
 
 To get a list of archived projects include the filter parameter with the value archived, example:
