@@ -72,17 +72,23 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
 * [User information](chapters/me.md)
  - GET /me
 * [Projects](chapters/projects.md)
- - GET /projects
- - GET /projects/:project_id
- - POST /projects
- - PUT /projects/:project_id
- - DELETE /projects/:project_id
+ - GET /projects - Get projects listing
+ - GET /projects/:project_id - Get single project
+ - POST /projects - Create a new project
+ - PUT /projects/:project_id - Update an existing project
+ - DELETE /projects/:project_id - delete a project
 * [Clients](chapters/clients.md)
- - GET /clients
- - GET /clients/:client_id
- - POST /clients
- - PUT /clients/:client_id
- - DELETE /clients/:client_id
+ - GET /clients - Get clients listing
+ - GET /clients/:client_id - Get single client
+ - POST /clients - Create a new client
+ - PUT /clients/:client_id - Update an existing client
+ - DELETE /clients/:client_id - Delete a client
+* [Tasks](chapters/tasks.md)
+ - GET /tasks - Get tasks
+ - GET /tasks/:task_id - Get single task
+ - POST /tasks - Create a new task
+ - PUT /tasks/:task_id - Update an existing task
+ - DELETE /tasks/:task_id - Delete a task
 
 ##Help us towards a better API##
 
