@@ -226,3 +226,9 @@ Use the fields from template as properties. A successful update returns the newl
 ##Delete task##
 
 `DELETE https://teamweek.com/api/v2/:account_id/tasks/:task_id.json`
+
+##Search tasks""
+`GET https://teamweek.com/api/v2/:account_id/tasks/search?term=foobar`
+
+Where foobar is the term you want to search for. Query matches task description, the project (if task is connected to a project) name and client (if project is connected to a client) name. Term is mached with OR and from the whole (basically a SQL query with LIKE %foobar% is made).
+Note: search is case insensitive, so Foobar, foobar, fooBAR all give same results.

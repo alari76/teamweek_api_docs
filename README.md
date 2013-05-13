@@ -89,6 +89,7 @@ If authentication fails, HTTP status code 403 is returned. You can read more abo
  - POST /tasks - Create a new task
  - PUT /tasks/:task_id - Update an existing task
  - DELETE /tasks/:task_id - Delete a task
+ - GET /tasks/search - Search from tasks
 	* [To-dos](chapters/todos.md)
    - GET /tasks/:task_id/todos - Get to-dos for a task
    - GET /tasks/:task_id/todos/:todo_id - Get a single to-do
