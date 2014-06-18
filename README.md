@@ -1,3 +1,5 @@
+NB! Teamweek API v2 is going to be deprecated soon. Please refer to our API v3 documentation - https://github.com/Teamweek/teamweek/wiki
+
 TeamWeek API v2
 ===============
 
